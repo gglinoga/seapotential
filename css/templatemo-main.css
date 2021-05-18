@@ -251,16 +251,19 @@ h4, .h4 {
   margin: 20px auto 15px auto;
 }
 
-
+.about-content {
+  padding-top: 20vh;
+  background-image: url(../img/a-section.jpg);
+}
 
 .projects-content {
   padding-top: 20vh;
-  background-image: url(../img/3rd-section.jpg);
+  background-image: url(../img/c-section.jpg);
 }
 
 .projects-content .item img {
   width: 100%;
-  max-height: 33vh;
+  /*max-height: 32vh;*/
 }
 
 .projects-content .item {
@@ -542,6 +545,10 @@ footer em {
     margin-bottom: 30px;
   }
 
+  .service-list {
+    text-align: center;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -764,4 +771,11 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+img.rounded-corners {
+  border-radius:50%;
+  text-align: center;
+  display: block;
+  margin: auto;
 }
