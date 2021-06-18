@@ -17,6 +17,9 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://sdk.amazonaws.com/js/aws-sdk-3.x.js"></script>
+        <script src="./js/PhotoViewer.js"></script>
+        <script>listAlbums();</script>
     </head>
 <!--
 Vanilla Template
@@ -31,6 +34,7 @@ https://templatemo.com/tm-526-vanilla
             <li class="nav-item"><a class="nav-link" href="#about"><span>About</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#portfolio"><span>Gallery</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#our-story"><span>Services</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog"><span>Blog</span></a></li>
             <li class="nav-item"><a class="nav-link" href="#contact-us"><span>Contact Us</span></a></li>
         </ul>
     </div>
@@ -313,6 +317,8 @@ https://templatemo.com/tm-526-vanilla
 
     <div class="parallax-content blog-content" id="blog">
         <div class="container">
+<!--            <h1>Photo Album Viewer</h1>-->
+<!--            <div id="viewer"></div>-->
             <div class="row">
                 <div class="col-md-12">
                     <div class="blog-form">
@@ -320,7 +326,7 @@ https://templatemo.com/tm-526-vanilla
                             <div class="blogTitle">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <H1>TITLE HERE - DATE HERE</H1>
+                                        <H1>Blog title - 06/18/2021</H1>
                                     </div>
                                 </div>
                             </div>
@@ -328,6 +334,8 @@ https://templatemo.com/tm-526-vanilla
                         <div class="row">
                             <div class="blogText">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam autem cum debitis, expedita illo illum incidunt ipsa ipsum iste magnam natus nisi odio praesentium ratione rerum tempore voluptatem. Autem, sunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque deleniti ducimus facere fuga iure laborum, nihil obcaecati possimus quae reiciendis voluptates. Blanditiis fuga hic minima porro, rem repudiandae tempora?  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci at dolore ea, et ex excepturi fugiat fugit impedit incidunt iste iure labore quidem repudiandae sint soluta totam vel, vero.</p>
+                                <br/>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab ad, adipisci aspernatur, consectetur cupiditate deserunt dignissimos eveniet fuga ipsa magnam nam, omnis pariatur porro repellat sequi soluta ullam vel Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eius ex facere facilis fuga incidunt minus mollitia officia sed ut! Accusantium asperiores facilis magnam minus nihil nulla quae saepe voluptatibus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsum nemo nihil quibusdam quisquam repellendus suscipit vitae voluptate. Nemo possimus quas quisquam repellat. Exercitationem facilis laudantium maxime minus similique tenetur?</p>
                             </div>
                         </div>
                     </div>
@@ -380,6 +388,33 @@ https://templatemo.com/tm-526-vanilla
                            4. Copy only URL and paste it within the src="" field below
                     -->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1373838.4042210341!2d-123.7650911530689!3d47.73725797345202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54903e54b09738e1%3A0x3390a64604d67e01!2sPuget%20Sound!5e0!3m2!1sen!2sth!4v1621233912495!5m2!1sen!2sth" width="100%" height="390" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="newsletter">
+                        <form id="newsletter" action="" class="newsletter-form" method="post">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <fieldset>
+                                        <input name="email" type="email" class="form-control" id="email-newsletter" placeholder="Enter your email to sign up for our newsletter..." required="">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-4">
+                                    <fieldset>
+                                        <button type="submit" id="newsletter-submit" class="btn" onclick="newsletter()">Sign Up</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="donation">
+                        <div class="primary-button">
+                            <a onclick="donate()">Donate</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -451,6 +486,13 @@ https://templatemo.com/tm-526-vanilla
             } // End if
           });
         });
+        let donate = () => {
+            alert("donate")
+        };
+        let newsletter = () => {
+            alert('Thank you for signing up!')
+        }
+
     </script>
 
 </body>

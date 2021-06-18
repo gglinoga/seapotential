@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-seapotential-staging-15803-authRole",
+      "UnauthRoleArn": "arn:aws:iam::196195400172:role/amplify-seapotential-staging-15803-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::196195400172:role/amplify-seapotential-staging-15803-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-seapotential-staging-15803-deployment",
+      "UnauthRoleName": "amplify-seapotential-staging-15803-unauthRole",
+      "StackName": "amplify-seapotential-staging-15803",
+      "StackId": "arn:aws:cloudformation:us-west-2:196195400172:stack/amplify-seapotential-staging-15803/9e22d2e0-cfd8-11eb-aba1-0a5e1eae02b3",
+      "AmplifyAppId": "d3vae2jwafqjwt"
+    },
+    "categories": {
+      "function": {
+        "seapotential816bafa6": {
+          "deploymentBucketName": "amplify-seapotential-staging-15803-deployment",
+          "s3Key": "amplify-builds/seapotential816bafa6-5a6377573435596a624b-build.zip"
+        }
+      }
+    }
+  }
+}

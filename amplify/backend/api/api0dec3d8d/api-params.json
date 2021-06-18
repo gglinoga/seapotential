@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/blog",
+      "lambdaFunction": "seapotential816bafa6",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/blog"
+    }
+  ],
+  "resourceName": "api0dec3d8d",
+  "apiName": "api0dec3d8d",
+  "functionArns": [
+    {
+      "lambdaFunction": "seapotential816bafa6"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-seapotential-staging-15803-authRole",
+    "unAuthRoleName": "amplify-seapotential-staging-15803-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "seapotential816bafa6",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

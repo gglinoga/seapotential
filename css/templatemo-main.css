@@ -399,6 +399,8 @@ section {
 
 .blogText {
   color: white;
+  padding: 15px;
+
 }
 
 .contact-content {
@@ -414,6 +416,21 @@ section {
   margin-bottom: 30px;
 }
 
+.newsletter {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.donation {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 25px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
 #contact input {
   border-radius: 3px;
   padding-left: 15px;
@@ -427,6 +444,20 @@ section {
   height: 50px;
   width: 100%;
   margin-bottom: 30px;
+}
+
+#newsletter input {
+  border-radius: 3px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: #232323;
+  background-color: rgba(250, 250, 250, 1);
+  outline: none;
+  border: none;
+  box-shadow: none;
+  line-height: 50px;
+  height: 50px;
+  width: 100%;
 }
 
 #contact textarea {
@@ -446,6 +477,20 @@ section {
 }
 
 #contact button {
+  display: inline-block;
+  background-color: #ff7d27;
+  padding: 15px 24px;
+  width: 100%;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+#newsletter button {
   display: inline-block;
   background-color: #ff7d27;
   padding: 15px 24px;
