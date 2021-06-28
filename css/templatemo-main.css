@@ -147,7 +147,7 @@ a:hover { color: #FF0; }
 .baner-content {
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../img/Jellyfish.jpeg);
+  background-image: url(../img/pacific.jpeg);
 }
 
 .baner-content h1 {
@@ -792,6 +792,15 @@ body.lb-disable-scrolling {
 .lb-data {
   padding: 0 4px;
   color: #ccc;
+}
+
+.bgcontainer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bioTitle {
+  text-align: center;
+  font-size: 20px;
 }
 
 .lb-data .lb-details {
