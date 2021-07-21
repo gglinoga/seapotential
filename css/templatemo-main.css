@@ -41,10 +41,10 @@ a:hover { color: #FF0; }
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-.fixed-side-navbar:hover {
+.fixed-side-navbar {
   background: transparent;
 }
-.fixed-side-navbar:hover .nav > li > a > span {
+.fixed-side-navbar .nav > li > a > span {
   color: rgba(0, 0, 0, 0.5);
   display: block;
   background-color: #fff;
@@ -105,14 +105,14 @@ a:hover { color: #FF0; }
   -webkit-transform: scale(0.6);
           transform: scale(0.6);
 }
-.fixed-side-navbar .nav > li a:hover {
+.fixed-side-navbar .nav > li a {
   background-color: transparent;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-color: black;
   boder-right: 0;
 }
-.fixed-side-navbar .nav > li a:hover > span {
+.fixed-side-navbar .nav > li a > span {
   color: black;
   display: block;
 }
