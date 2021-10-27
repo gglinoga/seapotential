@@ -6,6 +6,8 @@ https://templatemo.com/tm-526-vanilla
 
 */
 
+
+
 p {
   font-size: 15px;
   line-height: 25px;
@@ -32,8 +34,8 @@ a:hover { color: #FF0; }
 
 .fixed-side-navbar {
   position: fixed;
-  top: 50%;
-  right: 0;
+  top: 10%;
+  right: 0%;
   z-index: 99999;
   margin-top: -100px;
   text-align: right;
@@ -77,6 +79,7 @@ a:hover { color: #FF0; }
 .nav>li {
   position: relative;
   display: block;
+  flex-direction: row;
 }
 .fixed-side-navbar .nav > li a {
   color: #fff;
