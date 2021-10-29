@@ -6,7 +6,9 @@ https://templatemo.com/tm-526-vanilla
 
 */
 
-
+.gallery-title {
+  text-align: center;
+}
 
 p {
   font-size: 15px;
@@ -31,6 +33,23 @@ a:hover { color: #FF0; }
 /*----------
   NAV
 ----------*/
+
+
+.sticky-top {
+  background-color: #ff7d27!important;
+}
+
+.nav-link {
+  color: #FFFFFF!important;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  padding: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
 .fixed-side-navbar {
   position: fixed;
@@ -403,7 +422,8 @@ section {
 .blogText {
   color: white;
   padding: 15px;
-
+  height: 70vh;
+  overflow: scroll;
 }
 
 .contact-content {
